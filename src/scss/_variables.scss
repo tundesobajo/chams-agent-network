@@ -1,0 +1,12 @@
+// Colors
+$chams-green: rgb(0, 99, 56);
+
+$theme-colors: (
+  "primary": $chams-green
+);
+
+// Navigation
+$navbar-light-color:           rgba($chams-green, .6);
+$navbar-light-hover-color:     rgba($chams-green, .7);
+$navbar-light-active-color:    rgba($chams-green, .9);
+$navbar-light-disabled-color:  rgba($chams-green, .3);
