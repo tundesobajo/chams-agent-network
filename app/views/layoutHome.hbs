@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    {{> head}}
+  </head>
+  <body class="{{pageClass}}">
+    <div class="d-flex flex-column masthead">
+      {{> navbarMain}}
+      <header class="mb-auto">
+        {{!-- <div class="container"> --}}
+          {{{body}}}
+        {{!-- </div> --}}
+      </header>
+    </div>
+    {{> script}}    
+  </body>
+</html>

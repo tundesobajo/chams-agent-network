@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head}}
+  </head>
+  <body class="{{pageClass}}">
+    {{> navbarMain}}
+
+    <main class="py-4">
+    {{{body}}}
+    </main>
+
+    <footer class="footer-main">
+      {{> footerMain}}
+    </footer>
+    
+    {{!-- {{#block script}} --}}
+      {{> script}}
+    {{!-- {{/script}} --}}
+  </body>
+</html>

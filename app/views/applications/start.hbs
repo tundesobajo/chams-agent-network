@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item"><a href="/applications/">Partnership Application</a></li>
+          <li class="breadcrumb-item active" aria-current="page">{{title}}</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <div class="row justify-content-between">
+    <div class="col-lg-3">
+      <div class="card">
+        <h5 class="card-header">Requirements</h5>
+        <div class="card-body">
+          <p class="card-text text-justify">You must ensure that your organization meets the requirements for eligibility before you begin your application for Partnership with <strong>Chams Agent Network</strong>.</p>
+          <a href="/requirements" class="btn btn-outline-primary">Review Requirements</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg">
+      <h1>{{title}}</h1>
+      <form action="/applications/start-process" class="border border-secondary rounded p-3">
+        <div class="collapse collapse1 show" id="check-container">
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            This application is for organizations that meet all the requirements needed to qualify for partnership.
+            <a href="/requirements">Click here to review the requirements.</a>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <p>Please check the boxes below to indicate that you have read and meet all the criteria for proceeding with this application. <small class="text-muted">NOTE: You must check all the boxes to continue.</small></p>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkConfirm1">
+            <label class="form-check-label" for="checkConfirm1">I have read all the requirements</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkConfirm2">
+            <label class="form-check-label" for="checkConfirm2">My organization meets all the requirements</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkConfirm3">
+            <label class="form-check-label" for="checkConfirm3">I am authorized to register my organization</label>
+          </div>
+          <button id="check-button" class="btn btn-lg btn-primary disabled my-3" data-toggle="collapse" data-target=".collapse1" aria-expanded="false" aria-controls="check-container area-container" disabled>Continue</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{{#content "script" mode="append"}}
+  <script src=""></script>
+{{/content}}
